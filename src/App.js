@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
+import { Cookies } from 'react-cookie';
 import { Avatar, Dropdown, Select } from 'antd';
 import 'antd/dist/reset.css';
 import './App.css';
 
 function App() {
+  const cookies = new Cookies();
+
+  useEffect(() => {
+    const allkons_id = cookies.get("allkons_id");
+    console.log('allkons_id :>> ', allkons_id);
+  }, [])
+
   const onChange = (value) => {
     console.log('hello :>> TTT', value);
   }
