@@ -1,5 +1,5 @@
 .main {
-  position: fixed;
+  position: relative;
   height: 50px;
   left: 0%;
   right: 0%;
@@ -16,7 +16,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 
   background: #F1F2F6;
 }
@@ -29,4 +29,8 @@
   bottom: 0%;
 
   background: linear-gradient(90deg, #E44218 8.3%, #DA391C 9.5%, #C02028 13.2%, #AD0E31 17%, #A10337 20.9%, #9E0039 25%, #25287A 41.7%, #0077C0 58.3%, #ACC022 75%, #FFAB08 91.7%);
+}
+
+.pr-10 {
+  padding-right: 10px;
 }
